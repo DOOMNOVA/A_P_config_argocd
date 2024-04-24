@@ -29,7 +29,7 @@ spec:
         image: doomnova/webapp-argocd:latest
         ports:
         - name: http
-          containerPort: 8081
+          containerPort: 8080
           protocol: TCP
         #resources:
         #  requests:
