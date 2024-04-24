@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/DOOMNOVA/A_p_test.git
+    repoURL: https://github.com/DOOMNOVA/A_P_config_argocd.git
     targetRevision: HEAD
-    path: argocd-app-config/dev
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
