@@ -66,6 +66,7 @@ spec:
       containers:
       - name: canary-rollout
         image: doomnova/webapp-argocd:latest
+        imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 3000
