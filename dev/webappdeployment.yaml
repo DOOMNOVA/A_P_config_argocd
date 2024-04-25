@@ -57,11 +57,11 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: webapp
+      app: canary-rollout
   template:
     metadata:
       labels:
-        app: webapp
+        app: canary-rollout
     spec:
       containers:
       - name: canary-rollout
@@ -100,7 +100,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: webapp
+    app: canary-rollout
   ports:
     - protocol: TCP
       port: 3000
